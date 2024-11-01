@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+
+}
+
+body{
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #a5b4fc, #90c5fd);
+}
+
+.Kamban{
+    display: flex;
+    gap: 14px;
+    padding: 24px;
+    width: 100%;
+    height: 90vh;
+    overflow-x: auto;
+}
+
+.kamban-colun{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #f6f8fc;
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px -3px rgb(0, 0, 0.1);
+    padding: 12px;
+    overflow: hidden;
+    position: relative;
+    min-width: 252px;
+}
+
+.kamban-colun::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.kamban-colun[data-id="1"]::after{
+    background-color:#694242 ;
+}
+
+.kamban-colun[data-id="2"]::after{
+    background-color:#425269 ;
+}
+
+.kamban-colun[data-id="3"]::after{
+    background-color:#426947 ;
+}
+
+.kamban-colun[data-id="4"]::after{
+    background-color:#a81f9b ;
+}
+
+.kamban-titulo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kamban-titulo{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.add-card{
+    color: dimgrey;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px;
+}
+
+.kamban-cards{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    padding: 5px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    gap: 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.kamban-card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #7b5454;
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0px 5px 5px -3px rgb(92, 73, 73);
+    cursor: pointer;
+}
+
+.card-hover{
+    background-color: antiquewhite;
+}
+.m {
+    color: #100909;
+    width: fit-content;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.m.hight{
+    background-color: #19d75b;
+}
+
+.m.midium{
+    background-color: rgb(255, 136, 0);
+}
+
+.m.low{
+    background-color: crimson;
+}
+
+.m.red{
+    background-color: red;
+}
+.card-infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.card-icons{
+    display: flex;
+    gap: 18px;
+}
+
+.card-icons i{
+    color: #55556f;
+}
+
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+*::-webkit-scrollbar{
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: #5d3f4c;
+    border-radius: 8px;
+}
+
+
+
+*::-webkit-scrollbar-thumb{
+    background-color: #f6f8fc;
+    border-radius: 20px;
+}
+
